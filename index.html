@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Home</a>
+        <!-- This button will indicates to screen readers that the content below may not be visible when toggled. -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+        <span class="navbar-toggler-icon"></span>
+       </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="about" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="blog" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="contact" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="overlay">
+            <div class="container">
+                <div class="description">
+                    <h1> Welcome to my portfolio hub</h1>
+                    <p> I put up a few of my things so you can see what I can do for you. Let me show you around.</p>
+                    <button class="btn btn-outline-secondary btn-lg">See more</button>
+                </div>
+            </div>
+    </header>
+
+    <!-- About Me -->
+    <div class="container">
+        <div class="about" id="about">
+            <h1 class="text-center">About Me</h1>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img src="images/about-me.PNG" class="img-fluid">
+                    <span>Junior Web Developer</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                    <h3>Moses Ramirez</h3>
+                    <p>I am a musician, a movie/pop-culture/linguistics/audio engineering enthusiast, and former sales rep. I am transitioning from sales to web development, and I couldn't be happier.</p>
+                    <p>I'm currently in a coding bootcamp focused on the JevaScript stack. I'm adaptable, and I can figure out just about anything when I put my mind to it.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="container">
+        <div class="portfolio" id="portfolio">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href=""><img src="images/port-1.png" class="img-fluid"></a>
+                    <span>Responsive Informational Site</span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href="drum-pad.html"><img src="images/port-2.jpg" class="img-fluid"></a>
+                    <span>JavaScript Drum Machine</span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href=""><img src="images/portfolio/port6.png" class="img-fluid"></a>
+                    <span>Clickum Samplum</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Posts section -->
+    <div class="blog" id="blog">
+        <div class="container">
+            <h1 class="text-center">Blog</h1>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/blog-webdev-1.png" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Why Web Development?</h4>
+                            <p class="card-text">
+
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/blog-aus-2.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">My Coding Journey So Far</h4>
+                            <p class="card-text">
+
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/blog-puz-2.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Problem-Solving is Fun</h4>
+                            <p class="card-text">
+
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src='js/main.js'>
+    </script>
+</body>
+
+</html>

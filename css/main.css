@@ -1,0 +1,181 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+.navbar {
+    background: #579d42;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #f4f4f4 !important;
+    cursor: pointer;
+}
+
+.nav-link {
+    /* This line originally had !important */
+    margin-right: 1em !important;
+}
+
+.navbar-brand:hover {
+    color: #343a40 !important;
+}
+
+.nav-link:hover {
+    background: #f4f4f4;
+    color: #579d42 !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    /* This line originally had !important. Changed from #fff. Had to add navbar bg color for toggle-icon to show up. */
+    background: #579d42;
+}
+
+.header {
+    background-image: url("../images/headerback1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(240, 220, 200, 0.7);
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.description {
+    position: absolute;
+    top: 38%;
+    margin: auto;
+    padding: 2em;
+}
+
+.description h1 {
+    color: #F97300;
+}
+
+.description p {
+    color: #005f86;
+    font-size: 20px;
+    font-weight: 500;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.description button {
+    border: 1px solid #F97300;
+    background: #F97300;
+    color: #fff;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.about {
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.about h1 {
+    color: #f97300;
+    margin: 2em;
+}
+
+.about img {
+    border-radius: 50%
+}
+
+.about span {
+    display: block;
+    color: #888;
+    position: relative;
+    margin-left: 3.4rem;
+    margin-bottom: 2rem;
+}
+
+.about .desc {
+    padding: 2em;
+    border-left: 4px solid #005f86;
+}
+
+.about .desc h3 {
+    color: #005f86;
+}
+
+.about .desc p {
+    line-height: 2;
+    color: #888;
+}
+
+.portfolio {
+    margin: 4em 0;
+    position: relative;
+}
+
+.portfolio h1 {
+    color: #F97300;
+    margin-bottom: 2em;
+}
+
+.portfolio img {
+    height: 75%;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.portfolio img:hover {
+    transition: all 0.2s;
+    transition-timing-function: ease-in;
+    transform: scale(1.05);
+}
+
+.portfolio span {
+    display: block;
+    color: #888;
+    position: relative;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.blog {
+    margin: 4em 0;
+    position: relative;
+}
+
+.blog h1 {
+    color: #F97300;
+    margin: 2em;
+}
+
+.blog .card {
+    box-shadow: 0 0 20px #ccc;
+}
+
+.blog .card:hover {
+    transition: all 0.2s;
+    transition-timing-function: ease-in;
+    transform: scale(1.05);
+}
+
+.blog .card img {
+    width: 100%;
+    height: 12em;
+}
+
+.blog .card-title {
+    color: #F97300;
+}
+
+.blog .card-body {
+    padding: 1em;
+}
