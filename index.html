@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400;600;800&family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Document</title>
 </head>
@@ -39,15 +42,15 @@
             <div class="container">
                 <div class="description">
                     <h1> Welcome to my portfolio hub</h1>
-                    <p> I put up a few of my things so you can see what I can do for you. Let me show you around.</p>
-                    <button class="btn btn-outline-secondary btn-lg">See more</button>
+                    <p> Let me show you around.</p>
+                    <button class="btn btn-lg"><a data-value="about" href="#">See more</a></button>
                 </div>
             </div>
     </header>
 
     <!-- About Me -->
-    <div class="container">
-        <div class="about" id="about">
+    <section class="about" id="about">
+        <div class="container">
             <h1 class="text-center">About Me</h1>
             <div class="row">
                 <div class="col-md-4 col-sm-12">
@@ -55,23 +58,24 @@
                     <span>Junior Web Developer</span>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 desc">
-                    <h3>Moses Ramirez</h3>
+                    <h2>Moses Ramirez</h2>
                     <p>I am a musician, a movie/pop-culture/linguistics/audio engineering enthusiast, and former sales rep. I am transitioning from sales to web development, and I couldn't be happier.</p>
-                    <p>I'm currently in a coding bootcamp focused on the JevaScript stack. I'm adaptable, and I can figure out just about anything when I put my mind to it.</p>
+                    <p>I'm currently in a coding <a href="https://www.nucamp.co/bootcamp-overview/full-stack-web-mobile-developmentbootcamp">bootcamp</a> focused on the full JevaScript stack. I'm adaptable, and I can figure out anything when I put my mind to it.</p>
 
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
 
     <!-- Portfolio -->
-    <div class="container">
-        <div class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio"></div>
+        <div class="container">
             <h1 class="text-center">Portfolio</h1>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <a href=""><img src="images/port-1.png" class="img-fluid"></a>
-                    <span>Responsive Informational Site</span>
+                    <span>Responsive Bootstrap Site</span>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <a href="drum-pad.html"><img src="images/port-2.jpg" class="img-fluid"></a>
@@ -83,26 +87,24 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
-
-    <!-- Posts section -->
-    <div class="blog" id="blog">
+    <!-- Posts -->
+    <section class="blog" id="blog">
         <div class="container">
             <h1 class="text-center">Blog</h1>
             <div class="row">
+
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card">
                         <div class="card-img">
                             <img src="images/blog-webdev-1.png" class="img-fluid">
                         </div>
-
                         <div class="card-body">
                             <h4 class="card-title">Why Web Development?</h4>
                             <p class="card-text">
-
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                A look into why I chose to transition from sales to web development
                             </p>
                         </div>
                         <div class="card-footer">
@@ -110,17 +112,16 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card">
                         <div class="card-img">
                             <img src="images/blog-aus-2.jpg" class="img-fluid">
                         </div>
-
                         <div class="card-body">
                             <h4 class="card-title">My Coding Journey So Far</h4>
                             <p class="card-text">
-
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Some milestones I've passed up to this point, along with the highs and lows
                             </p>
                         </div>
                         <div class="card-footer">
@@ -128,17 +129,16 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card">
                         <div class="card-img">
                             <img src="images/blog-puz-2.jpg" class="img-fluid">
                         </div>
-
                         <div class="card-body">
-                            <h4 class="card-title">Problem-Solving is Fun</h4>
+                            <h4 class="card-title">Problem-Solving is Fun!</h4>
                             <p class="card-text">
-
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                If this describes you, you could be a future web developer.
                             </p>
                         </div>
                         <div class="card-footer">
@@ -146,9 +146,54 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-    </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm-5 text-center">
+                    <!-- Styling w/small buttons and text
+                    <h5>Social</h5>
+                    <a href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i> Instagram</a>
+                    <a href="http://facebook.com/"><i class="fa fa-facebook fa-lg"></i> Facebook</a>
+                    <a href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i> Twitter</a>
+                    <a href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i> YouTube</a>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234<br>
+                    <i class="fa fa-envelope fa-lg text-primary"></i> campsites@nucamp.co
+                -->
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+15126559825"><i class="fa fa-phone"></i> (512) 655-9825</a><br>
+                    <a role="button" class="btn btn-link" href="mailto:mosesgramirez@gmail.com"><i class="fa fa-envelope"></i> mosesgramirez@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
 
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
