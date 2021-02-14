@@ -95,13 +95,14 @@ h1, h2, h3, h4, h5 {
 
 .description h1 {
     color: #eb9632;
+    font-size: 50px;
     font-weight: 600;
     text-shadow: 1px 1px #000;
 }
 
 .description p {
     color: #3269e0;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     width: 50%;
     margin-bottom: 25px;
@@ -196,7 +197,7 @@ h1, h2, h3, h4, h5 {
 .portfolio img:hover {
     transition: all 0.2s;
     transition-timing-function: ease-in;
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
 .portfolio span {
@@ -225,7 +226,7 @@ h1, h2, h3, h4, h5 {
 .blog .card:hover {
     transition: all 0.2s;
     transition-timing-function: ease-in;
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
 .blog .card img {
@@ -251,4 +252,12 @@ footer {
     padding-top: 2em;
     height: 200px;
     color: #fff;
+}
+
+.btn-social-icon {
+    color: white;
+}
+
+.btn-social-icon:hover {
+    color: #5c6688;
 }
