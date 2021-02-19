@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .overlay {
-    position: absolute;
+    /* position: absolute; */
     /* background-color: rgba(245, 245, 245, 0.7); */
     background-color: #c4a36550;
     min-height: 100%;
@@ -102,11 +102,12 @@ h1, h2, h3, h4, h5 {
 
 .description p {
     color: #3269e0;
+    
     font-size: 25px;
     font-weight: 700;
     width: 50%;
     margin-bottom: 25px;
-    text-shadow: 1px 1px #eee;
+    text-shadow: 0 0 4px #eee;
     white-space: nowrap;
     line-height: 1.5;
 }
@@ -163,6 +164,12 @@ h1, h2, h3, h4, h5 {
 .about .desc {
     padding: 2em;
     border-left: 3px solid #5c6688;
+}
+
+@media (max-width: 768px) {
+    .about .desc {
+        border-left: none;
+    }
 }
 
 .about .desc h2 {
