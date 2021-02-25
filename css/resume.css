@@ -1,3 +1,120 @@
-header {
-    background-color: #333f50;
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500;600;700&display=swap');
+
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: #e6e6e6;
+    padding: 20px 15%;
 }
+
+
+.container {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 2fr;
+    
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main";
+    background-color: white;
+    width: 1000px;
+    /* justify-items: center; */
+}
+
+
+.header {
+    grid-area: header;
+    height: 150px;
+    background-color: #333f50;
+    color: white;
+    padding: 2rem 300px;
+}
+
+hr {
+    color: white;
+    position: abo;
+    margin: -44px 0 -20px;
+    z-index: 0;
+}
+
+.heading {
+    background-color: #333f50;
+    color: white;
+    
+}
+
+.sub-heading {
+    background-color: #f2f2f2;
+}
+
+h1, h2, h3 {
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-left: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    position: static;
+    margin: 0;
+    margin-top: 20px;
+    padding: 8px 20px 0;
+    text-align: center;
+    border: 1px white solid;
+    z-index: 1;
+}
+
+.header > h2 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+p {
+    padding: 0 25px;
+}
+/*
+@media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    hr {
+        margin: -31px;
+    }
+    .header > h2 {
+}
+*/
+
+.contact { 
+    grid-area: sidebar;
+    grid-row-start: 2;
+    width: max-content;
+}
+
+.education {
+    grid-area: sidebar;
+    grid-row: 3 / span 2;
+    margin: auto;
+}
+
+.skills {
+    grid-area: sidebar;
+    grid-row-start: 4;
+}
+
+.languages {
+    grid-area: sidebar;
+    grid-row-start: 5;
+}
+
+
+.profile, .experience, .experience-ctd, .references {
+    grid-area: main;
+}
+
+ .languages, .achievements, .interests {
+ }
