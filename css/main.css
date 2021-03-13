@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5 {
     background-position: center;
 }
 
-.overlay {
+.header-overlay {
     /* position: absolute; */
     /* background-color: rgba(245, 245, 245, 0.7); */
     background-color: #c4a36550;
@@ -102,7 +102,6 @@ h1, h2, h3, h4, h5 {
 
 .description p {
     color: #3269e0;
-    
     font-size: 25px;
     font-weight: 700;
     width: 50%;
@@ -201,11 +200,18 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0 0 20px #5c6688;
 }
 
+.img-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .portfolio img:hover {
     transition: all 0.2s;
     transition-timing-function: ease-in;
     transform: scale(1.07);
+    /* filter: brightness(0.2); */
 }
+
+
 
 .portfolio span {
     display: block;
